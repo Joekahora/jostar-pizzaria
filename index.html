@@ -11,11 +11,59 @@
 </head>
 <body>
     <div class="container-fluid">
+        <!-- navbar -->
         <div class="row">
-            <h1>jostar pizzaria</h1>
+            <img class="logo" src="imgs/hat.jpg" alt="logo">
+            <ul class="navlist">
+                <li><a href="#">home</a></li>
+                <li><a href="#">pizza sizes</a></li>
+                <li><a href="#">toppings</a></li>
+            </ul>
+        </div>
+        <!-- welcome section -->
+        <div class="row">
+            <div class="welcome">
+                <img src="imgs/1900x1427.jpg" alt="pizzabg">
+                <p>welcome to Jostar Pizzaria</p>
+                <p>for the best finger-licking pizza that leaves you craving for more</p>
+            </div>
+        </div>
+        <!-- form -->
+        <div class="row">
+            <form action="post" class="myform" onsubmit="return  myFunction()">
+                <p>select your preferred pizza size</p>
+                <div class="sizes">
+                    <input type="radio" name="small" id="small">small
+                    <input type="radio" name="medium" id="medium">medium
+                    <input type="radio" name="large" id="large">large
+                </div>
+                <div class="toppings">
+                    <p>Select your preferred pizza toppings</p>
+                    <input type="checkbox" name="pineapple" id="pineapple">pineapple
+                    <input type="checkbox" name="pepperoni" id="pepperoni">pepperoni
+                    <input type="checkbox" name="mushroom" id="mushroom">mushrooms
+                    <input type="checkbox" name="onion" id="onion">onions
+                    <input type="checkbox" name="sausage" id="sausage">sausages
+                </div>
+                <div class="delivery">
+                    <p>would you like it to be delivered?</p>
+                    <input type="radio" name="yes" id="yes">yes
+                    <input type="radio" name="no" id="no">no
+                </div>
+                <input class="btn" type="submit" value="checkout">
+            </form>
         </div>
     </div>
- 
+    <div class="row">
+        <div class="footer">
+            <p>you can reach us through our social media handles</p>
+            <div class="socialicons">
+                <img src="imgs/facebook.png">
+                <img src="imgs/instagram.jpg">
+                <img src="imgs/twitter.png">
+            </div>
+        </div>
+    </div> 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
     </script>
