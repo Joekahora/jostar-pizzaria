@@ -38,5 +38,18 @@ form{
 .btn{
     color: #fff;
     text-transform: uppercase;
+    margin-left: 500px;
     position: static;
+}
+.footer{
+    background-color: #8a0606;
+    color: #fff;
+}
+.footer p{
+    text-transform: capitalize;
+    margin-left: 500px;
+    font-family: monospace;
+}
+.socialicons{
+    margin-left: 500px;
 }
