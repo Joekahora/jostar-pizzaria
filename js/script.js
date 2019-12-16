@@ -22,3 +22,9 @@ function pizzaToppings(pineapple,pepperoni,mushrooms,onion,sausages){
     this.sausages=sausages;
 };
 // user interface
+$(document).ready(function(){
+    $(".blanks form").submit(function(event){
+
+        event.preventDefault();
+    });
+});
