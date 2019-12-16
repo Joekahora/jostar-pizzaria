@@ -41,6 +41,9 @@ form{
     margin-left: 500px;
     position: static;
 }
+#output{
+    display: none;
+}
 .footer{
     background-color: #8a0606;
     color: #fff;
