@@ -1,9 +1,11 @@
-# PROJECT DESCRIPTION
+# PROJECT NAME
 JOSTAR PIZZARIA
 # PROJECT DESCRIPTION
 Jostar pizzaria is a pizza online retailer with options of having pizza be delivered to your door step
 # AUTHOR
 Joel Kahora
+# GHPAGES
+https://joekahora.github.io/jostar-pizzaria/
 # TECHNOLOGIES USED
 technologies used include HTML5, bootstrap css, JavaScript and JQuery
 # SETUP AND INSTALLATION
