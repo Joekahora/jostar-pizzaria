@@ -1,30 +1,42 @@
 // business logic
-function pizzaOptions(sizes,crusts,toppings){
-    this.size = sizes;
-    this.crust = crusts;
-    this.topping =toppings
+// function pizzaOptions(sizes,crusts,toppings){
+//     this.sizes = sizes;
+//     this.crusts = crusts;
+//     this.topping =toppings;
+// };
+function pizzaSizes(size,prize){
+    this.size=size;
+    this.prize=prize;
 };
-function pizzaSizes(small,medium,large){
-    this.small=small;
-    this.medium=medium;
-    this.large=large;
+var small = new pizzaSizes("Small", 400);
+var medium = new pizzaSizes("Medium", 800);
+var large = new pizzaSizes("Large",1000);
+
+function pizzaCrusts(crust,prize){
+    this.crust=crust;
+    this.prize=prize;
 };
-function pizzaCrusts(crispy,stuffed,gluttenfree){
-    this.crispy=crispy;
-    this.stuffed=stuffed;
-    this.gluttenfree=gluttenfree;
+
+var crispy = new pizzaCrusts("Crispy", 100);
+var stuffed = new pizzaCrusts("Stuffed", 150);
+var gluttenFree = new pizzaCrusts("Glutten-Free", 200);
+
+function pizzaToppings(topping,prize){
+    this.topping=topping;
+    this.prize=prize;
 };
-function pizzaToppings(pineapple,pepperoni,mushrooms,onion,sausages){
-    this.pineapple=pineapple;
-    this.pepperoni=pepperoni;
-    this.mushrooms=mushrooms;
-    this.onion=onion;
-    this.sausages=sausages;
-};
+var pineapple = new pizzaToppings("Pineapple", 50);
+var pepperoni = new pizzaToppings("Pepperoni", 60);
+var mushroom = new pizzaToppings("Mushroom", 50);
+var onion = new pizzaToppings("Onions", 30);
+var saugage = new pizzaToppings("Sausage",60);
+
 // user interface
 $(document).ready(function(){
     $(".blanks form").submit(function(event){
-
+        var pizzaSmall = $("input#small").val();
+        var pizzaMedium = $("input#medium").val();
+        var pizzaLarge = $("input#large").val();        
         event.preventDefault();
     });
 });
