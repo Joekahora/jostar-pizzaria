@@ -24,10 +24,19 @@ html, body{
     font-size: 30px;
     font-family: 'Courier Prime',monospace
 }
+.blanks{
+    background-image: url(../imgs/background.jpg);
+    background-size: 50%;
+    background-repeat: repeat;
+}
 form{
-    background-color: #52001a;
-    color: #fff;
-    padding-left: 75px;
+    /* background-color: #52001a; */
+    color: rgb(252, 252, 252);
+    padding-left: 50px;
+    margin-left: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .sizes{
     text-transform: uppercase;
@@ -38,8 +47,8 @@ form{
 .btn{
     color: #fff;
     text-transform: uppercase;
-    margin-left: 500px;
-    position: static;
+    /* margin-left: 500px; */
+    /* position: static; */
 }
 #output{
     display: none;
