@@ -34,9 +34,11 @@ var saugage = new pizzaToppings("Sausage",60);
 // user interface
 $(document).ready(function(){
     $(".blanks form").submit(function(event){
-        var pizzaSize = ($(".size input:selected").text());
-        if (pizzaSize === small){
-            alert("You choose the pizza Size " + small.sizet )
+        var pizzaSize = parseInt($(".sizes option:selected").val());
+        if (pizzaSize === 0){
+            alert("Please select a pizza Size ")
+        }else{
+            alert("So You Have choosen " + $(".sizes option:selected").text())
         }
         // if ($(".sizes") === small || $(".sizes") === medium || $(".sizes") === large){
         //     alert("You Choose " + $(".sizes input:selected").text());

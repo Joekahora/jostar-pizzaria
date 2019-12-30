@@ -59,27 +59,36 @@
             <div class="blanks">
                 <div class="col-md-4">
                     <form method="post" class="myform" name="myform">
-                        <div class="sizes">
+                        <div class="row"> 
                             <p>select your preferred pizza size</p>
-                            <input type="radio" name="size" id="small" value="400">small ksh 400<br>
-                            <input type="radio" name="size" id="medium" value="800">medium ksh 800<br>
-                            <input type="radio" name="size" id="large" value="1000">large ksh 1000<br>
+                            <select class="sizes">
+                                <option value="0">Select Pizza Size</option>
+                                <option value="400">Small</option>
+                                <option value="800">Medium</option>
+                                <option value="1000">Large</option>
+                            </select>
                         </div>
                         <br>
-                        <div class="crust">
+                        <div class="row">
                             <p>select your preferred crust</p>
-                            <input type="radio" name="crust" id="crispy" value="100">crispy ksh 100 <br>
-                            <input type="radio" name="crust" id="stuffed" value="150">stuffed ksh 150 <br>
-                            <input type="radio" name="crust" id="glutten-free" value="200">glutten-free ksh200 <br>
+                            <select class="crust">
+                                <option value="0">Choose Your Preffered crust</option>
+                                <option value="100">crispy</option>
+                                <option value="150">stuffed</option>
+                                <option value="200">glutten-free</option>
+                            </select>
                         </div>
                         <br>
-                        <div class="toppings">
+                        <div class="row">
                             <p>Select your preferred pizza toppings</p>
-                            <input type="checkbox" name="topping" id="pineapple" value="50">pineapple ksh 50 <br>
-                            <input type="checkbox" name="topping" id="pepperoni" value="60">pepperoni ksh 60 <br>
-                            <input type="checkbox" name="topping" id="mushroom" value="50">mushrooms ksh 50 <br>
-                            <input type="checkbox" name="topping" id="onion" value="30">onions ksh 30 <br>
-                            <input type="checkbox" name="topping" id="sausage" value="60">sausages ksh 60 <br>
+                            <select class="toppings">
+                                <option value="0">Select your Preffered Toppings</option>
+                                <option value="50">pineapple</option>
+                                <option value="60">pepperoni</option>
+                                <option value="50">mushrooms</option>
+                                <option value="30">onions</option>
+                                <option value="60">sausages</option>
+                            </select>
                         </div>
                         <br>
                         <div class="noofpizza">
@@ -87,10 +96,13 @@
                             <input type="number" name="noofoder" id="nooforder" required>
                         </div>
                         <br> <br>
-                        <div class="delivery">
+                        <div class="row">
                             <p>would you like it to be delivered?</p>
-                            <input type="radio" name="delivery" id="yes">yes
-                            <input type="radio" name="delivery" id="no">no
+                            <select class="delivery">
+                                <option value="">Delivey Options</option>
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                            </select>
                         </div>
                         <br>
                         <input class="btn bg-warning" type="submit" value="checkout">
