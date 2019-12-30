@@ -34,31 +34,13 @@ var saugage = new pizzaToppings("Sausage",60);
 // user interface
 $(document).ready(function(){
     $(".blanks form").submit(function(event){
-        var pizzaSizeInput = $(".sizes").val();
-        // if (pizzaSizes === "Small"){
-        //     alert("You Choose " + small.size + " pizza Size" + " that costs " + small.prize);
-        // };
-        // if(pizzaSizes === $("input#medium")){
-        //     alert("You Choose " + medium.size + " pizza Size" + " that costs " + medium.prize);
-        // };
-        // if(pizzaSizes === $("input#large")){
-        //     alert("You Choose " + large.size + " pizza Size" + " that costs " + large.prize);
-        // };
-        // $("input#small").val(alert("You Choose " + small.size + " pizza Size"+ " that costs " + small.prize));
-        // $("input#medium").val(alert("You Choose " + medium.size + " pizza Size" + " that costs " + medium.prize));
-        // $("input#large").val(alert("You Choose " + large.size + " pizza Size" + " that costs " + large.prize));  
-        if (pizzaSizeInput === $("input#small").val()){
-            alert("You Choose " + small.size + " pizza Size" + " that costs " + small.prize);
-            return;
-        };
-        if (pizzaSizeInput === $("input#medium").val()){
-            alert("You Choose " + medium.size + " pizza Size" + " that costs " + medium.prize);
-            return;
-        };
-        if (pizzaSizeInput === $("input#large").val()){
-            alert("You Choose " + large.size + " pizza Size" + " that costs " + large.prize);
-            return;
-        }    
+        var pizzaSize = ($(".size input:selected").text());
+        if (pizzaSize === small){
+            alert("You choose the pizza Size " + small.sizet )
+        }
+        // if ($(".sizes") === small || $(".sizes") === medium || $(".sizes") === large){
+        //     alert("You Choose " + $(".sizes input:selected").text());
+        // };   
         event.preventDefault();
     });
 });
