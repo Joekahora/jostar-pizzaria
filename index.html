@@ -8,41 +8,46 @@
     <title>JOSTAR PIZZARIA</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
     <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 
 <body>
     <!-- navbar -->
-    <div class="row">
+    <nav class="navbar navbar-expand-md navbar-light bg-warning static-top">
         <div class="container-fluid">
-            <nav class="navbar navbar-expand-lg navbar-light bg-warning fixed-top">
-                <a class="navbar-brand" href="#">
-                    <img src="imgs/chef.jpg" alt="logo" width="70" height="70">
-                    Jostar
-                </a>
-                <!-- collapsable button -->
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#home">home</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#pizzasizes">pizza sizes</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#crust">crusts</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#toppings">toppings</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+            <a class="navbar-brand" href="#">
+                <img src="imgs/chef.jpg" alt="logo" width="70" height="70">
+                Jostar
+            </a>
+            <!-- collapsable button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navbarResponsive" class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#sizes" target="_self">pizza sizes</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#crust" target="_self">crusts</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#toppings" target="_self">toppings</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
+    </nav>
+
     <br>
     <!-- welcome section -->
     <div class="row">
@@ -57,9 +62,9 @@
     <div class="row">
         <div class="container-fluid padding">
             <div class="blanks">
-                <div class="col-md-4">
-                    <form method="post" class="myform" name="myform">
-                        <div class="row"> 
+                <form method="post" class="myform" name="myform">
+                    <div class="row">
+                        <div class="col-md-4">
                             <p>select your preferred pizza size</p>
                             <select class="sizes" id="sizes">
                                 <option value="0">Select Pizza Size</option>
@@ -68,18 +73,22 @@
                                 <option value="1000">Large</option>
                             </select>
                         </div>
-                        <br>
-                        <div class="row">
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-4">
                             <p>select your preferred crust</p>
-                            <select class="crust" id= "crust">
+                            <select class="crust" id="crust">
                                 <option value="0">Choose Your Preffered crust</option>
                                 <option value="100">crispy</option>
                                 <option value="150">stuffed</option>
                                 <option value="200">glutten-free</option>
                             </select>
                         </div>
-                        <br>
-                        <div class="row">
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-4">
                             <p>Select your preferred pizza toppings</p>
                             <select class="toppings" id="toppings">
                                 <option value="0">Select your Preffered Toppings</option>
@@ -90,13 +99,19 @@
                                 <option value="60">sausages</option>
                             </select>
                         </div>
-                        <br>
-                        <div class="noofpizza">
-                            Enter the number of pizza you want <br>
-                            <input type="number" name="noofoder" id="nooforder" required>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="noofpizza">
+                                Enter the number of pizza you want <br>
+                                <input type="number" name="noofoder" id="nooforder" required>
+                            </div>
                         </div>
-                        <br> <br>
-                        <div class="row">
+                    </div>
+                    <br> <br>
+                    <div class="row">
+                        <div class="col-md-4">
                             <p>would you like it to be delivered?</p>
                             <select class="delivery">
                                 <option value="">Delivey Options</option>
@@ -104,13 +119,13 @@
                                 <option value="no">No</option>
                             </select>
                         </div>
-                        <br>
-                        <input class="btn bg-warning" type="submit" value="checkout">
-                    </form>
-                </div>
+                    </div>
+                    <br>
+                    <input class="btn bg-warning" type="submit" value="checkout">
+                </form>
             </div>
             <div id="output">
-                
+
             </div>
         </div>
     </div>
@@ -121,17 +136,25 @@
             <div class="footer">
                 <p>you can reach us through our social media handles</p>
                 <div class="socialicons">
-                    <img src="imgs/facebook.png">
-                    <img src="imgs/instag.png" height="60" width="70">
-                    <img src="imgs/twitter.png">
+                    <div class="col-md-4">
+                        <img src="imgs/facebook.png">
+                    </div>
+                </div>
+                <div class="socialicons">
+                    <div class="col-md-4">
+                        <img src="imgs/instag.png" height="60" width="70">
+                    </div>
+                </div>
+                <div class="socialicons">
+                    <div class="col-md-4">
+                        <img src="imgs/twitter.png">
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-    </script>
+    </div>
     <script src="js/script.js"></script>
 </body>
 
