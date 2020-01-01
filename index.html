@@ -8,41 +8,46 @@
     <title>JOSTAR PIZZARIA</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
     <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 
 <body>
     <!-- navbar -->
-    <div class="row">
+    <nav class="navbar navbar-expand-md navbar-light bg-warning static-top">
         <div class="container-fluid">
-            <nav class="navbar navbar-expand-lg navbar-light bg-warning fixed-top">
-                <a class="navbar-brand" href="#">
-                    <img src="imgs/chef.jpg" alt="logo" width="70" height="70">
-                    Jostar
-                </a>
-                <!-- collapsable button -->
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#home">home</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#pizzasizes">pizza sizes</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#crust">crusts</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#toppings">toppings</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+            <a class="navbar-brand" href="#">
+                <img src="imgs/chef.jpg" alt="logo" width="70" height="70">
+                Jostar
+            </a>
+            <!-- collapsable button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navbarResponsive" class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#sizes" target="_self">pizza sizes</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#crust" target="_self">crusts</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#toppings" target="_self">toppings</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
+    </nav>
+
     <br>
     <!-- welcome section -->
     <div class="row">
@@ -59,7 +64,7 @@
             <div class="blanks">
                 <div class="col-md-4">
                     <form method="post" class="myform" name="myform">
-                        <div class="row"> 
+                        <div class="row">
                             <p>select your preferred pizza size</p>
                             <select class="sizes" id="sizes">
                                 <option value="0">Select Pizza Size</option>
@@ -71,7 +76,7 @@
                         <br>
                         <div class="row">
                             <p>select your preferred crust</p>
-                            <select class="crust" id= "crust">
+                            <select class="crust" id="crust">
                                 <option value="0">Choose Your Preffered crust</option>
                                 <option value="100">crispy</option>
                                 <option value="150">stuffed</option>
@@ -110,7 +115,7 @@
                 </div>
             </div>
             <div id="output">
-                
+
             </div>
         </div>
     </div>
@@ -129,9 +134,6 @@
         </div>
     </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-    </script>
     <script src="js/script.js"></script>
 </body>
 
