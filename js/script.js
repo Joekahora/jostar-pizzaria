@@ -35,14 +35,23 @@ var saugage = new pizzaToppings("Sausage",60);
 $(document).ready(function(){
     $(".blanks form").submit(function(event){
         var pizzaSize = parseInt($(".sizes option:selected").val());
-        if (pizzaSize === 0){
+        var pizzaCrust = parseInt($(".crust option:selected").val());
+        var pizzaTopping = parseInt($(".toppings option:selected").val());
+        var noOfPizza = parseInt($("#nooforder").val());
+        var pizzaTotal = noOfPizza * (pizzaSize + pizzaCrust + pizzaTopping) 
+        if (pizzaSize === 0 || pizzaCrust === 0 || pizzaTopping === 0){
             alert("Please select a pizza Size ")
         }else{
-            alert("So You Have choosen " + $(".sizes option:selected").text())
+            alert("So You Have choosen " + $(".sizes option:selected").text() + "\n" +"with the crust " + $(".crust option:selected").text()
+               + "\n" + "and topping of " + $(".toppings option:selected").text() + "\n" + "Here is your Total " + pizzaTotal);
         }
-        // if ($(".sizes") === small || $(".sizes") === medium || $(".sizes") === large){
-        //     alert("You Choose " + $(".sizes input:selected").text());
-        // };   
+        var pizzaDelivery = ($(".delivery option:selected").val());
+        if(pizzaDelivery === "yes"){
+            var deliveryAddress = prompt("Please input your Delivery address: ")
+            alert("The Pizza Shall be delivered to: " + deliveryAddress)
+        }else{
+            alert("There is no delivery charge");
+        }  
         event.preventDefault();
     });
 });

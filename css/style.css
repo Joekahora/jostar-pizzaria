@@ -11,7 +11,7 @@ html, body{
 .welcome{
     height: 500px;
     background-image: url(../imgs/1900x1427.jpg);
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 .welcome p{
@@ -52,6 +52,7 @@ form{
 }
 #output{
     display: none;
+    text-align: right;
 }
 .footer{
     background-color: #8a0606;
