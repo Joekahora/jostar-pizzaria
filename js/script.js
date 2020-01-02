@@ -44,8 +44,6 @@ $(document).ready(function(){
         }else{
             $("#output").append("Pizza Size Is: " + $(".sizes option:selected").text() + "<br>" + "Crust Type Is: " + $(".crust option:selected").text()
                 + "<br>" + " Topping Preffered Is: " + $(".toppings option:selected").text() + "<br>" + "Total: " + pizzaTotal);
-            // alert("So You Have choosen " + $(".sizes option:selected").text() + "\n" +"with the crust " + $(".crust option:selected").text()
-            //    + "\n" + "and topping of " + $(".toppings option:selected").text() + "\n" + "Here is your Total " + pizzaTotal);
         }
         var pizzaDelivery = ($(".delivery option:selected").val());
         if(pizzaDelivery === "yes"){
