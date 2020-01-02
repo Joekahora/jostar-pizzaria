@@ -3,6 +3,10 @@ html, body{
     height: 100%;
     width: 100%;
 }
+/* to fix the whitespaces on the rigth side */
+body {
+    overflow-x: hidden;
+}
 .navbar{
     padding: .8rem;
     text-transform: uppercase;
