@@ -42,13 +42,16 @@ $(document).ready(function(){
         if (pizzaSize === 0 || pizzaCrust === 0 || pizzaTopping === 0){
             alert("Please select a pizza Size ")
         }else{
-            alert("So You Have choosen " + $(".sizes option:selected").text() + "\n" +"with the crust " + $(".crust option:selected").text()
-               + "\n" + "and topping of " + $(".toppings option:selected").text() + "\n" + "Here is your Total " + pizzaTotal);
+            $("#output").append("Pizza Size Is: " + $(".sizes option:selected").text() + "<br>" + "Crust Type Is: " + $(".crust option:selected").text()
+                + "<br>" + " Topping Preffered Is: " + $(".toppings option:selected").text() + "<br>" + "Total: " + pizzaTotal);
+            // alert("So You Have choosen " + $(".sizes option:selected").text() + "\n" +"with the crust " + $(".crust option:selected").text()
+            //    + "\n" + "and topping of " + $(".toppings option:selected").text() + "\n" + "Here is your Total " + pizzaTotal);
         }
         var pizzaDelivery = ($(".delivery option:selected").val());
         if(pizzaDelivery === "yes"){
-            var deliveryAddress = prompt("Please input your Delivery address: ")
-            alert("The Pizza Shall be delivered to: " + deliveryAddress)
+            var deliveryAddress = prompt("Please input your Delivery address: ");
+            var deliveryCost = 250 + (noOfPizza * (pizzaSize + pizzaCrust + pizzaTopping));
+            $("#output").append("<br>The Pizza Shall be delivered to: " + deliveryAddress + "<br>The Total Cost Is: " + deliveryCost)
         }else{
             alert("There is no delivery charge");
         }  

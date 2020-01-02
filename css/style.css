@@ -90,8 +90,9 @@ form{
     /* position: static; */
 }
 #output{
-    display: none;
-    text-align: right;
+    padding: 50px;
+    font-size: 24px;
+    text-align: left;
 }
 .footer{
     background-color: #8a0606;
