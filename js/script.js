@@ -42,7 +42,7 @@ $(document).ready(function(){
         if (pizzaSize === 0 || pizzaCrust === 0 || pizzaTopping === 0){
             alert("Please select a pizza Size ")
         }else{
-            $("#output").append("Pizza Size Is: " + $(".sizes option:selected").text() + "<br>" + "Crust Type Is: " + $(".crust option:selected").text()
+            $("#output").append("<br>Pizza Size Is: " + $(".sizes option:selected").text() + "<br>" + "Crust Type Is: " + $(".crust option:selected").text()
                 + "<br>" + " Topping Preffered Is: " + $(".toppings option:selected").text() + "<br>" + "Total: " + pizzaTotal);
         }
         var pizzaDelivery = ($(".delivery option:selected").val());
@@ -51,8 +51,11 @@ $(document).ready(function(){
             var deliveryCost = 250 + (noOfPizza * (pizzaSize + pizzaCrust + pizzaTopping));
             $("#output").append("<br>The Pizza Shall be delivered to: " + deliveryAddress + "<br>The Total Cost Is: " + deliveryCost)
         }else{
-            alert("There is no delivery charge");
-        }  
+            // alert("There is no delivery charge");
+        } 
         event.preventDefault();
     });
+    // $("form#reset").click(function (event) {
+    //     $("#output").reset();
+    // }); 
 });
