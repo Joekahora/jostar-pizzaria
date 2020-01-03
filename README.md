@@ -17,8 +17,11 @@ Bootstrap 4 css
 JavaScript
 JQuery
 # SETUP AND INSTALLATION
-The setup is simple just copy and paste the bootsrap 4 and jquery
-cdn to the head of your html5 file
+### Open terminal 
+### cd desktop
+### git clone: https://github.com/Joekahora/jostar-pizzaria
+### cd into jostar-pizzaria
+### code . or atom . 
 # CONTACT
 You can reach me through my email: gachau.joel@gmail.com
 # LICENSE
