@@ -1,38 +1,29 @@
-# PROJECT NAME
-JOSTAR PIZZARIA
-# PROJECT DESCRIPTION
-Jostar pizzaria is a pizza online retailer with options of having pizza be delivered to your door step
+# JOSTAR PIZZARIA
 # AUTHOR
 Joel Kahora
-# GHPAGES
-https://joekahora.github.io/jostar-pizzaria/
+# DESCRIPTION
+This is a web app that allows the user to choose their preferred crust, size and topping and the option to be delivered.
+# BEHAVIORAL DRIVEN DEVELOPMENT
+## HEADER
+Has the  website logo and and navigation links
+## FORM
+The form contains options for the pizza sizes, pizza crusts, toppings and delivery options for the user to select.
+## CONTACTS
+Has a link to our social media handles for the users to give their feedback. 
 # TECHNOLOGIES USED
-technologies used include HTML5, bootstrap css, JavaScript and JQuery
+technologies used include: 
+HTML5
+Bootstrap 4 css
+JavaScript
+JQuery
 # SETUP AND INSTALLATION
-The setup is simple just copy and paste the bootsrap 4 and jquery
-cdn to the head of your html5 file
+### Open terminal 
+### cd desktop
+### git clone: https://github.com/Joekahora/jostar-pizzaria
+### cd into jostar-pizzaria
+### code . or atom . 
 # CONTACT
 You can reach me through my email: gachau.joel@gmail.com
 # LICENSE
-MIT License
-
-Copyright (c) 2019 Joel Kahora
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+Licensed under the MIT License
 
