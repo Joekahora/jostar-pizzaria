@@ -86,15 +86,7 @@ form{
 .footer{
     background-color: #8a0606;
     color: #fff;
-}
-.footer p{
-    text-transform: capitalize;
-    margin-left: 250px;
-    font-family: monospace;
-    font-size: 25px;
-}
-.socialicons{
-    display: flex;
+    display: block;
     align-items: center;
-    justify-content: center;
+    padding-left: 250px;
 }
