@@ -86,19 +86,20 @@ form{
 .footer{
     background-color: #8a0606;
     color: #fff;
-    padding: 40px;
+    padding: 30px;
     
 }
 .footer p{
     text-align: center;
 }
 .footer ul{
+    padding-top: 15px;
     list-style-type: none;
     display: flex;
     justify-content: center;
 }
 .footer ul li{
-    padding-left: 40px;
+    padding-left: 20px;
 }
 .footer ul li:hover{
     color: rgb(255, 230, 0);
