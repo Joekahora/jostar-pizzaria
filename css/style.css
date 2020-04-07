@@ -79,14 +79,27 @@ form{
     text-transform: uppercase;
 }
 #output{
-    padding: 50px;
+    padding-top: 50px;
     font-size: 24px;
     text-align: left;
 }
 .footer{
     background-color: #8a0606;
     color: #fff;
-    display: block;
-    align-items: center;
-    padding-left: 250px;
+    padding: 40px;
+    
+}
+.footer p{
+    text-align: center;
+}
+.footer ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+.footer ul li{
+    padding-left: 40px;
+}
+.footer ul li:hover{
+    color: rgb(255, 230, 0);
 }
